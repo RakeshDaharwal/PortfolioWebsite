@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+
+h3 {
+    font-size: 2rem;
+}
+
+.para {
+    color: #777;
+    line-height: 1.6em;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.btn {
+    background-color: red;
+    padding: 1.2rem 2.4rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 2rem 0;
+    box-shadow: 0 0.5rem 1.5rem black;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+.section {
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 8rem;
+}
+
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-column {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.heading {
+    font-size: 4rem;
+    padding: 1rem 0;
+    color: red;
+}
+
+
+
+
+
+
+
+/* HEADER SECTION  */
+
+.header {
+    width: 100%;
+    padding: 0 6rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: red;
+
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    font-family: cursive;
+}
+
+.nav-list {
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-list ul li {
+    font-size: 3rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    font-size: 2.5rem;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: black;
+}
+
+.mobile-nav-btn {
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+
+
+
+/* HERO DATA SECTION  */
+
+.section-hero {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    height: 25rem;
+    width: 35rem;
+
+}
+
+.hero-heading {
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+
+/* BIO DATA SECTION  */
+
+.section-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bio-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-img img {
+    height: 30rem;
+    width: 32rem;
+
+}
+
+.cv-btn {
+    margin-top: 3rem;
+}
+
+
+.bio-data-stats {
+    display: flex;
+    padding: 3rem 0;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.bio-stats h3 {
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    width: 90%;
+    height: 0.8rem;
+    background-color: lightgray;
+    border-radius: 10rem;
+    position: relative;
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    top: o;
+    left: o;
+    width: 40%;
+    height: inherit;
+    background-color: cornflowerblue;
+    border-radius: 10rem;
+}
+
+.bio-progress2::before {
+    width: 80%;
+}
+
+.bio-progress3::before {
+    width: 50%;
+}
+
+.bio-progress4::before {
+    width: 80%;
+}
+
+.bio-progress5::before {
+    width: 60%;
+}
+
+.progress-bar span {
+    position: absolute;
+    top: 1.8rem;
+    width: 4rem;
+    height: 2rem;
+    background-color: mediumpurple;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: 0;
+    left: 36%;
+}
+
+.bio-progress2 span {
+    left: 76%;
+}
+
+.bio-progress3 span {
+    left: 46%;
+}
+
+.bio-progress4 span {
+    left: 76%;
+}
+
+.bio-progress5 span {
+    left: 56%;
+}
+
+/* to create caret  */
+.progress-bar span::after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0.8rem solid mediumpurple;
+    border-color: transparent;
+    border-bottom-color: mediumpurple;
+    top: -1.6rem;
+
+}
+
+
+/* PORTFOLIO SECTION  */
+
+
+.section-port {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-port img {
+    height: 25rem;
+    width: 35rem;
+    border-radius: 1rem;
+}
+
+.port {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.port-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding: 1rem;
+}
+
+
+.port-btn-active {
+    transform: translateY(-1rem);
+
+}
+
+.port-btn:hover {
+    transform: translateY(-1rem);
+    transition: all .3s linear;
+}
+
+.port-img-not-active {
+    display: none;
+}
+
+
+
+/* COUNT SECTION  */
+
+.section-count {
+    background-color: black;
+    text-align: center;
+    transition: all .7s linear;
+    color: white;
+
+}
+
+.count-heading {
+    font-size: 5rem;
+    padding: 0.5rem;
+    color: red;
+}
+
+
+
+/* SERVICE SECTION  */
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.margin-set ion-icon {
+    color: red;
+}
+
+
+.section-services {
+    transition: all 0.7s linear;
+    background-color: whitesmoke;
+}
+
+.section-services p {
+    font-size: 1.6rem;
+    color: #777;
+    line-height: 2rem;
+}
+
+.section-services .grid {
+    margin-top: 10rem;
+    row-gap: 10rem;
+
+}
+
+.margin-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box {
+    text-align: center;
+    box-shadow: 0 .1rem 1rem .1rem #777;
+    border-radius: 5rem;
+    padding: 4rem 3rem;
+    transition: all 0.3s linear;
+    background-color: white;
+}
+
+.margin-set h3 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+
+.service-box:hover,
+.service-box:active {
+    transform: translateY(-2rem);
+}
+
+.service-icon {
+    width: 8rem;
+    height: 8rem;
+    display: inline-block;
+    background-color: black;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    animation: water-wave 3s linear infinite;
+}
+
+.service-icon::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    border: 1px solid black;
+    background: transparent;
+    animation: water-wave 3s linear infinite;
+}
+
+@keyframes water-wave {
+    0% {
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+
+    50% {
+        border-radius: 25% 75% 45% 55% / 76% 18% 82% 24%;
+    }
+
+    100% {
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+}
+
+
+
+
+
+
+
+/* FREELANCING SECTION  */
+
+.section-freelancing {
+
+    background-image: url(/IMG/free3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.7s linear;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-freelancing h1 {
+    color: white;
+}
+
+.section-freelancing span {
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
+
+/* CONTACT SECTION */
+
+.section-contact {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.main-contact {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+}
+
+.main-contact input,
+.main-contact textarea {
+    padding: 1.5rem 2rem;
+    border: .1rem solid #c9c9c9;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.main-contact .grid {
+    gap: 3.2em;
+}
+
+
+
+
+
+/* FOOTER SECTION  */
+
+.section-footer {
+    background-color: black;
+}
+
+.section-footer h3 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 4rem;
+
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+    font-size: 1.8rem;
+    color: #adadad;
+    text-transform: capitalize;
+}
+
+.f-links span,
+.f-services span,
+.f-address span {
+    margin: 0;
+
+}
+
+.f-address p,
+.f-address p a {
+    font-size: 1.8rem;
+    font-style: normal;
+    color: #adadad;
+}
+
+.f-icons {
+    margin: 5rem 0;
+    gap: 3rem;
+    text-align: center;
+    color: #adadad;
+
+}
+
+.f-icons .icons {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(144, 172, 208, 0.2);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    color: white;
+    animation: water-wave 3s linear infinite;
+}
+
+.end p {
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+}
+
+
+/* SCROLL SECTION  */
+
+.scrolltop-style {
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1;
+}
+
+.scroll-top {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    padding: 1.2rem 1.4rem;
+    color: white;
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY  */
+
+
+@media (max-width: 1400px) {
+
+    html {
+        font-size: 60%;
+    }
+
+}
+
+
+
+@media (max-width: 1300px) {
+
+    .section-port img {
+        height: 22rem;
+        width: 30rem;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+
+    /* service section  */
+
+    .section-services .grid-three-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-box {
+        height: 30rem;
+        width: 35rem;
+    }
+
+}
+
+
+@media (max-width: 1300px) {
+
+    .section-port img {
+        height: 20rem;
+        width: 25rem;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+
+    html {
+        font-size: 58%;
+
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .mobile-nav-btn {
+        display: block;
+        z-index: 9999;
+        color: white;
+    }
+
+    .mobile-nav-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+
+
+
+    .navbar {
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all .5s linear;
+        /* display: none; */
+
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-list .nav-link:link,
+    .navbar .nav-list .nav-link:visited {
+        color: white;
+        font-size: 3rem;
+    }
+
+    .active .navbar {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+
+    }
+
+    .active .mobile-nav-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+
+    }
+
+    .active .mobile-nav-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+}
+
+
+
+
+@media (max-width: 950px) {
+
+    .section-hero {
+        text-align: center;
+    }
+
+    .section-hero .grid-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-data {
+        align-items: center;
+
+    }
+
+    /* bio data */
+
+    .section-bio .grid-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .section-bio .bio-img {
+        display: none;
+    }
+
+    .section-bio .container {
+        padding: 0 12rem;
+    }
+
+
+    .section-port .grid-three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .section-port img {
+        width: 35rem;
+        height: 25rem;
+        gap: 1rem;
+    }
+
+}
+
+
+
+@media (max-width: 800px) {
+
+    html {
+        font-size: 56%;
+    }
+
+    .section-count .grid-four-column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+
+
+@media (max-width:700px) {
+
+    .port {
+        text-align: center;
+        padding: 0 12rem;
+    }
+
+
+    .service-box p {
+        padding: 0 5rem;
+    }
+
+    .section-services .grid-three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .service-box {
+        height: 35rem;
+        width: 35rem;
+    }
+
+    .section-footer .grid-three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .section-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 54%;
+    }
+
+
+    .section-contact .grid-two-column {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+
+    html {
+        font-size: 50%;
+    }
+
+    .section-bio .container {
+        padding: 0 5rem;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+     html{
+        font-size: 46%;
+    }
+
+    .section-port .container {
+        padding: 0 10rem;
+    }
+
+}
+
+
+
+@media (max-width: 370px) {
+
+    html {
+        font-size: 42%;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+
+    html {
+        font-size: 38%;
+    }
+}
+
+@media (max-width: 290px) {
+
+    html {
+        font-size: 36%;
+    }
+}
+
+@media (max-width: 250px) {
+
+    .section-count .grid-four-column {
+        grid-template-columns: 1fr;
+    }
+}
